@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>build a survey form - freecodecamp</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <section class="title-text">
+      <h1 id="title">Formulario de encuesta</h1>
+	  
+      <p id="description" class="title-text"><em style="font-size: 90%;">Haganos saber como podemos mejorar freeCodeCamp</em></p>
+    </section>
+  </header>
+  
+  <main>
+    <form id="survey-form" >
+      <section id="survey-fields">
+      
+        <label for="name" id="name-label">* Nombre:</label>
+        <input id="name" type="text" placeholder="ingrese su nombre" required>
+        <label for="Email" id="email-label">* correo:</label>
+        <input id="email" type="email" placeholder="ingrese su correo" required>
+        <label for="number" id="number-label">* edad:</label>
+        <input id="number" type="number" placeholder="ingrese su edad" min=1 max=125 required>
+
+        
+      
+        
+        <label for="dropdown">que opcion describe tu rol actual?</label>
+        <select id="dropdown" form="survey-form">
+          <option value="" disabled selected>seleccione una opcion</option>
+          <option value="student">estudiante</option>
+          <option value="full-time-job">Trabajo tiempo completo</option>
+          <option value="full-time-learner">aprendiendo tiempo completo</option>
+          <option value="prefer-not">prefiero no decir</option>
+          <option value="other">otro</option>
+        </select>
+      
+        
+        <label for="recommendation">* recomendaria fcc a un amigo?</label>
+        <fieldset id="recommendation"class="filterview">
+          <label for="r_definitely"><input type="radio" name="recommend" id="r_definitely" value="definitely" required>Seguro</label>
+          <label for="r_maybe"><input type="radio" name="recommend" id="r_maybe" value="maybe" required>Talvez</label>
+          <label for="r_not_sure"><input type="radio" name="recommend" id="r_not_sure" value="notsure" required>No estoy seguro</label>
+        </fieldset>
+        
+        
+        <label for="likethemost">que es lo que mas te gusta FCC:</label>
+        <select id="likethemost">
+          <option value="" disabled selected>seleccione una opcion</option>
+          <option value="challenges">Desafios</option>
+          <option value="projects">Proyectos</option>
+          <option value="community">Comunidad</option>
+          
+        </select>
+      
+        
+        <label for="improvements">Cosas que deberian mejorarse en el futuro:</label>
+        <fieldset id="improvements" class="filterview">
+          <legend>(<em>Marque todo lo que corresponda</em>)</legend>
+          <label  for="c-fep"><input type="checkbox" name="improve-checks" id="c-fep" value="fep">Proyectos front-end</label>
+          <label for="c-bep"><input type="checkbox" name="improve-checks" id="c-bep" value="bep">Proyectos back-end</label>
+          <label for="c-datav"><input type="checkbox" name="improve-checks" id="c-datav" value="datav">Visualizacion de datos</label>
+          <label for="c-chlgs"><input type="checkbox" name="improve-checks" id="c-chlgs" value="chlgs">Desafios</label>
+          <label for="c-vid"><input type="checkbox" name="improve-checks" id="c-vid" value="vid">Videos</label>
+          <label for="c-wiki"><input type="checkbox" name="improve-checks" id="c-wiki" value="wiki">Wiki</label>
+          <label for="c-forum"><input type="checkbox" name="improve-checks" id="c-forum" value="forum">
+Foro</label>
+          <label for="c-addcours"><input type="checkbox" name="improve-checks" id="c-addcours" value="addcours">Cursos adicionales</label>
+        </fieldset>
+        
+        
+          
+       
+        
+        <label for="comments">Algun comentario o sugerencia?</label>
+        <textarea style="height:50px;resize:vertical;" id="comments" placeholder="Escriba aca"></textarea>
+      </section>
+
+      
+      <button id="submit">Enviar</button>
+    </form>
+  </main>
+ 
+</body>
+</html>
